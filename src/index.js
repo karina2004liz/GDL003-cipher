@@ -29,8 +29,10 @@ for(i=0;i<string.length;i++){
         }
 
     }
-return document.write("Texto original: " + string +"  ======= " + "Texto codificado : " + codeCipher );
-
+document.getElementById('texto').innerHTML ="Texto original: " + string  + " Texto codificado : " + codeCipher;
+document.getElementById("inicio").style.display = "none";
+document.getElementById("titulos").style.display = "none";
+document.getElementById("resultado").style.display = "block";
 }
 
 function fdecod(){
@@ -52,7 +54,7 @@ function fdecod(){
 
    }
   else if (numberCodeAscii>=97 && numberCodeAscii<=122) { // validando para letras minusculas
-       var valueLetterLower =  (numberCodeAscii+97-45)%26+97 ; // código ASCII de la nueva letra
+       var valueLetterLower =  (numberCodeAscii+97-desplazamiento)%26+97 ; //  CODIDO PENDIENTE código ASCII de la nueva letra
        var letterLower = String.fromCharCode(valueLetterLower); //convierte el nuevo ASCII en una letra del alfabeto
        codeDecipher+=letterLower; // concatenamos la nueva palabra
 
@@ -62,6 +64,23 @@ function fdecod(){
          codeDecipher+=space; // concatenamos el mismo valor
      }
  }
-return document.write("Texto codificado :" + string  + " ========  "+"Texto original : \n " + codeDecipher ); // muestra la palabra decodificada
-// muestra mensaje en la página web Index
+// muestra la palabra decodificada
+// innerHTML nos sirve para regresar el "return" en el html con estilo
+document.getElementById('texto').innerHTML ="Texto codificado :" + string +" Texto original : \n " + codeDecipher ;
+// style.display nos oculta o muestra divs por id
+document.getElementById("inicio").style.display = "none";
+document.getElementById("titulos").style.display = "none";
+document.getElementById("resultado").style.display = "block";
+
+
+}
+
+function fregresar(){
+
+document.getElementById("inicio").style.display = "block";
+document.getElementById("titulos").style.display = "block";
+document.getElementById('texto').style.display = "none";
+document.getElementById("resultado").style.display = "none";
+// location.reload recarga la página a la que nos redirigimos
+location.reload();
 }
