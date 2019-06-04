@@ -2,13 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Prueba Cipher</title>
+    <title>ENIGMA 1.0</title>
     <link rel="stylesheet" href="style.css" />
+
+    <h1>CÓDIGO ENIGMA</h1>
+  <p> ENIGMA está diseñado para que puedas codificar tus mensajes de manera secreta y compartirlos de una manera segura con quien tú decidas. </p>
+  <h2> Asegurate de introducir sólo texto sin acentos ni signos de puntuación</h2>
+
   </head>
+
+  
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
+
+
+      <div class="input">
+
+
+          Ingresa tu texto<input type="text" name="txt" value="" id= "itexto" class="txt" >
+          Ingresa tu numero de desplazamiento<input type="text" name="txt" value="" id= "inum" class="txt" >
+    
+          <input type="button" name="bcodificar" value="CODIFICAR" onclick="fcod()">
+          <input type="button" name="bdecodificar" value="DECODIFICAR" onclick="fdecod()">
+    
+      </div>
+
+      
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
