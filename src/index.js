@@ -54,7 +54,7 @@ function fdecod(){
 
    }
   else if (numberCodeAscii>=97 && numberCodeAscii<=122) { // validando para letras minusculas
-       var valueLetterLower =  (numberCodeAscii+97-desplazamiento)%26+97 ; //  CODIDO PENDIENTE código ASCII de la nueva letra
+      var valueLetterLower =  (numberCodeAscii+97-desplazamiento +14)%26+97 ;  //  CODIDO CORREGIDO!! código ASCII de la nueva letra
        var letterLower = String.fromCharCode(valueLetterLower); //convierte el nuevo ASCII en una letra del alfabeto
        codeDecipher+=letterLower; // concatenamos la nueva palabra
 
