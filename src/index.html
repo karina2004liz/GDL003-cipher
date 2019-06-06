@@ -3,13 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>ENIGMA 1.0</title>
-<script type="text/javascript" src="codigo.js"> </script>
-<link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="diseno.css">
+
 
 
 <div id="titulos">
-
-
 
 <h1>CÓDIGO ENIGMA</h1>
 <p> ENIGMA está diseñado para que puedas codificar tus mensajes de manera secreta y compartirlos de una manera segura con quien tú decidas. </p>
@@ -19,27 +17,26 @@
   </head>
   <body>
     <body background="fondo.jpg">
-    <div id= "inicio" class="input">
+<div id= "inicio" class="input">
 
 
-    Ingresa tu texto<input type="text" name="txt" value="" id= "itexto" class="txt" >
+    Ingresa tu texto<input type="text" name="txt" id= "itexto" >
     <br>
     <br>
-    Ingresa tu numero de desplazamiento<input type="text" name="txt" value="" id= "inum" class="txt" >
+    Ingresa tu numero de desplazamiento<input type="text" name="txt" id= "inum" >
     <br>
     <br>
     <input type="button" name="bcodificar" value="CODIFICAR" onclick="fcod()">
     <input type="button" name="bdecodificar" value="DECODIFICAR" onclick="fdecod()">
-
-
 </div>
 
-  <div class="r" id= "resultado" hidden>
+  <div class="r" id= "resultado" >
     <h3 id="texto"> </h3>
 
-<input type="button" name="" value="REGRESAR" onclick="fregresar()">
-
+<input id="bregresar" type="button" name="" value="CAPTURAR NUEVOS DATOS" onclick="fregresar()">
 
   </div>
+  <script type="text/javascript" src="app.js"> </script>
+  <script type="text/javascript" src="cipher.js"> </script>
   </body>
 </html>
