@@ -3,11 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>ENIGMA 1.0</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="diseno.css">
 
+  <!-- <div id= "login" >
+
+  <h1>Ingreso a ENIGMA </h1>
+  <br>
+  <br>
+
+  <form name= "form1">
+
+    User <input type="text" name="txt" class="pass" >
+    <br>
+    <br>
+    Password <input type="password" name="num" class="pass" >
+    <br>
+    <br>
+    <input type="button" value="Aceptar" id= "button" onclick="usrpas()">
+
+  </form>
+
+</div>  -->
 
 
-<div id="titulos">
+
+<div id="titulos" >
 
 <h1>CÓDIGO ENIGMA</h1>
 <p> ENIGMA está diseñado para que puedas codificar tus mensajes de manera secreta y compartirlos de una manera segura con quien tú decidas. </p>
@@ -16,24 +37,27 @@
   </div>
   </head>
   <body>
-    <body background="fondo.jpg">
+    <body >
+
 <div id= "inicio" class="input">
 
 
-    Ingresa tu texto<input type="text" name="txt" id= "itexto" >
+     <input placeholder="Ingresa tu texto"  type="text" name="txt" id= "itexto" class="myinput" autocomplete="off" >
     <br>
     <br>
-    Ingresa tu numero de desplazamiento<input type="text" name="txt" id= "inum" >
+    <input placeholder="Ingresa tu numero de desplazamiento" type="text" name="txt" id= "inum"  class= "myinput" autocomplete="off">
     <br>
     <br>
-    <input type="button" name="bcodificar" value="CODIFICAR" onclick="fcod()">
-    <input type="button" name="bdecodificar" value="DECODIFICAR" onclick="fdecod()">
+    <input type="button" name="bcodificar" value="CODIFICAR" onclick="fcod()" id="button" >
+    <input type="button" name="bdecodificar" value="DECODIFICAR" onclick="fdecod()" id="button">
 </div>
 
-  <div class="r" id= "resultado" >
+  <div class="r" id= "resultado" hidden >
+    <br>
+    <br>
     <h3 id="texto"> </h3>
 
-<input id="bregresar" type="button" name="" value="CAPTURAR NUEVOS DATOS" onclick="fregresar()">
+<input id="bregresar" type="button" name="" value="REGRESAR" onclick="fregresar()">
 
   </div>
   <script type="text/javascript" src="app.js"> </script>
