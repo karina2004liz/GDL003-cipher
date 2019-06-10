@@ -1,9 +1,10 @@
 window.cipher = {
 
-  encode: function(text, desplazamiento){
+  encode: (text, desplazamiento)=>{
   
     let x = text.value;
     let codeCipher ="";
+    let i = 0;
   
    for(i=0;i<x.length;i++){
             let numberCodeAscii = x[i].charCodeAt(0); // obtenemos el código ASCII
@@ -33,14 +34,15 @@ window.cipher = {
   
       }
   
-  }
+  };
   
   window.decipher = {
-  decode: function(text, desplazamiento){
+  decode: (text, desplazamiento)=> {
   
     let x = text.value;
     let codeCipher ="";
-  
+    let i = 0;
+
    for(i=0;i<x.length;i++){
             let numberCodeAscii = x[i].charCodeAt(0); // obtenemos el código ASCII
                 if(numberCodeAscii>=65 && numberCodeAscii<=90){ // condición codigo ASCII (Valores Mayusculas)
@@ -67,4 +69,4 @@ window.cipher = {
   }
   
   
-  }
+  };

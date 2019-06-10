@@ -16,34 +16,42 @@ document.getElementById("resultado").style.display = "none";
 */
 
 
-
 let text = document.getElementById("itexto");
 let desplazamiento = document.getElementById("inum");
+let cifrar = document.getElementById("buttonC");
+let descifrar = document.getElementById('buttonD');
+let regresar = document.getElementById("bregresar");
 
 
 
-function fcod() {
 
-document.getElementById("texto").innerHTML = window.cipher.encode(text,desplazamiento);
+cifrar.addEventListener("click",() => {
+
+
+let txtCifrado = window.cipher.encode(text,desplazamiento);
+
+document.getElementById("texto").innerHTML = txtCifrado;
 document.getElementById("inicio").style.display = "none";
 document.getElementById("titulos").style.display = "none";
 document.getElementById("resultado").style.display = "block";
 
 
-}
+});
 
-function fdecod() {
+descifrar.addEventListener("click",() => {
 
-document.getElementById("texto").innerHTML = window.decipher.decode(text,desplazamiento);
+
+let txtCifrado = window.decipher.decode(text,desplazamiento);
+
+document.getElementById("texto").innerHTML = txtCifrado;
 document.getElementById("inicio").style.display = "none";
 document.getElementById("titulos").style.display = "none";
 document.getElementById("resultado").style.display = "block";
 
 
+});
 
-}
-
-
+/*
 function fregresar(){
 
 
@@ -59,6 +67,21 @@ function fregresar(){
 
 
   // location.reload recarga la página a la que nos redirigimos
-location.reload();
+//location.reload();
 
-}
+} */
+
+
+regresar.addEventListener("click",() => {
+
+  document.getElementById("inicio").style.display = "block";
+  document.getElementById("titulos").style.display = "block";
+  document.getElementById('texto').style.display = "none";
+  document.getElementById("resultado").style.display = "none";
+
+  document.getElementById("itexto").value = "";
+  document.getElementById("inum").value = "";
+  location.reload();
+
+
+});
