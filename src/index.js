@@ -1,36 +1,19 @@
-/*
 
-function usrpas(){
-if (document.form1.txt.value=="admin1" && document.form1.num.value=="1234");
-
-else {alert("Error en Usuario o Contraseña. Intenta de nuevo.")}
-
-
-document.getElementById("login").style.display = "none";
-document.getElementById("inicio").style.display = "block";
-document.getElementById("titulos").style.display = "block";
-document.getElementById("resultado").style.display = "none";
-
-}
-
-*/
-
-
-let text = document.getElementById("itexto");
 let desplazamiento = document.getElementById("inum");
+let text = document.getElementById("itexto");
 let cifrar = document.getElementById("buttonC");
 let descifrar = document.getElementById('buttonD');
 let regresar = document.getElementById("bregresar");
 
 
 
-
 cifrar.addEventListener("click",() => {
-
-
-let txtCifrado = window.cipher.encode(text,desplazamiento);
-
+    
+let offset= desplazamiento.value;
+let txt = text.value;
+let txtCifrado = "Tu texto cifrado es:   " + (window.cipher.encode(offset,txt));
 document.getElementById("texto").innerHTML = txtCifrado;
+
 document.getElementById("inicio").style.display = "none";
 document.getElementById("titulos").style.display = "none";
 document.getElementById("resultado").style.display = "block";
@@ -40,8 +23,9 @@ document.getElementById("resultado").style.display = "block";
 
 descifrar.addEventListener("click",() => {
 
-
-let txtCifrado = window.decipher.decode(text,desplazamiento);
+let offset= desplazamiento.value;
+let txt = text.value;
+let txtCifrado = "Tu texto descifrado es:   " +  (window.cipher.decode(offset,txt));
 
 document.getElementById("texto").innerHTML = txtCifrado;
 document.getElementById("inicio").style.display = "none";
