@@ -1,9 +1,9 @@
-CIFRADO CESAR
+* CIFRADO CESAR
 
 El cifrado César es una de las técnicas de codificación más básicas que existen, consiste en trasladar las palabras del texto a cifrar un número determinado de posiciones en el alfabeto. Este número de posiciones será la clave que necesitaremos para descifrar más tarde nuestro mensaje. Así en un simple ejemplo si quisiéramos cifrar la letra a con una clave = 6, simplemente desplazaríamos nuestra letra 6 posiciones en el alfabeto: a, b, c, d, e, f, g. Para descifrar la g, repetiríamos el proceso pero en orden contrario: g, f, e, d, c, b, a.
 
 
-CIFRADO CESAR EN LA SEGUNDA GUERRA MUNDIAL
+* CIFRADO CESAR EN LA SEGUNDA GUERRA MUNDIAL
 
 ENIGMA era el nombre de una máquina de rotores que permitía usarla tanto para cifrar como para descifrar mensajes.
 
