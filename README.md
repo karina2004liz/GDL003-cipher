@@ -34,3 +34,5 @@ En el campo de texto ingresaríamos Omar-Castillo u OmarCastillo y en el campo d
 
 desplazamiento 20 => texto OmarCastillo =   JhvmXvnodggj
 desplazamiento 04 => texto Omar-Castillo =  Sqev-Gewxmpps
+
+De manera que sería algo fácil de recordar para el usuario, pero casi indecifrable para el público en general.
