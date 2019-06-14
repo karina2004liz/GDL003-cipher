@@ -2,9 +2,9 @@ window.cipher = {
 
   encode: (desplazamiento,text) => {
 
-  
+
     let codeCipher ="";
-  
+
 
    for(let i=0;i<text.length;i++){
             let numberCodeAscii = text[i].charCodeAt(0); // obtenemos el código ASCII
@@ -18,17 +18,18 @@ window.cipher = {
                     let letterLower = String.fromCharCode(valueLetterLower); //convertir el nuevo ASCII en letra del alfabeto
                     codeCipher+=letterLower; // concatenar para formar la nueva palabra
                   }
-            else if(numberCodeAscii==32){  // si el caracter es un espacio vacio
-                        let space = " ";
-
-                      codeCipher+=space;
+            else if(numberCodeAscii>=32 && numberCodeAscii<=64){  // si el caracter es un espacio vacio
+                        let numberCodeAscii = text[i].charCodeAt(0);
+                        let position =String.fromCharCode(numberCodeAscii);
+                      codeCipher+=position;
                   }
 
+
   }
-  
+
          return codeCipher;
-         
-         
+
+
 
 
 
@@ -42,9 +43,9 @@ window.cipher = {
 
   decode: (desplazamiento,text) => {
 
-    
+
     let codeCipher ="";
-    
+
 
    for( let i=0;i<text.length;i++){
             let numberCodeAscii = text[i].charCodeAt(0); // obtenemos el código ASCII
@@ -58,10 +59,11 @@ window.cipher = {
                     let letterLower = String.fromCharCode(valueLetterLower); //convertir el nuevo ASCII en letra del alfabeto
                     codeCipher+=letterLower; // concatenar para formar la nueva palabra
                   }
-            else if(numberCodeAscii==32){  // si el caracter es un espacio vacio
-                        let space = " ";
-                      codeCipher+=space;
-                  }
+                  else if(numberCodeAscii>=32 && numberCodeAscii<=64){  // si el caracter es un espacio vacio
+                              let numberCodeAscii = text[i].charCodeAt(0);
+                              let position =String.fromCharCode(numberCodeAscii);
+                              codeCipher+=position;
+                        }
 
               }
 

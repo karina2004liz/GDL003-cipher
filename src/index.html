@@ -4,35 +4,18 @@
     <meta charset="utf-8">
     <title>ENIGMA 1.0</title>
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-  <!-- <div id= "login" >
-
-  <h1>Ingreso a ENIGMA </h1>
-  <br>
-  <br>
-
-  <form name= "form1">
-
-    User <input type="text" name="txt" class="pass" >
-    <br>
-    <br>
-    Password <input type="password" name="num" class="pass" >
-    <br>
-    <br>
-    <input type="button" value="Aceptar" id= "button" onclick="usrpas()">
-
-  </form>
-
-</div>  -->
-
-
 
 <div id="titulos" >
 
 <h1>CÓDIGO ENIGMA</h1>
+<h4>ENCRYPTED MESSAGE</h4>
 <p> ENIGMA está diseñado para que puedas codificar tus mensajes de manera secreta y compartirlos de una manera segura con quien tú decidas. </p>
-<h2> Asegurate de introducir sólo texto sin acentos ni signos de puntuación</h2>
+<p>Un poco de historia:</p>
+<h2> El 1 de septiembre de 1939 Alemania invadió Polonia, dando comienzo a lo que luego se convertiría en la guerra más devastadora que ha conocido la humanidad.<br>
+   En ese momento, el matemático y genio Alan Turing ya estaba trabajando para el Government Code & Cypher School (GC&CS), el Servicio de Inteligencia británico.<br>
+    Un año antes había empezado con ellos su tarea a tiempo parcial, que desde el principio estuvo centrada en descifrar el código secreto que Alemania utilizaba para sus comunicaciones militares, llamado ENIGMA.</h2>
 
   </div>
   </head>
@@ -40,15 +23,17 @@
 
 <div id= "inicio" class="input">
 
+  <br>
+  <br>
+    <input placeholder="Enter text"  type="text" name="txt" id= "itexto" class="myinput" autocomplete="off" >
+    <br>
+    <br>
+    <input placeholder="Enter Scroll Number" type="text" name="txt" id= "inum"  class= "myinput" autocomplete="off">
 
-     <input placeholder="Ingresa tu texto"  type="text" name="txt" id= "itexto" class="myinput" autocomplete="off" >
     <br>
     <br>
-    <input placeholder="Ingresa tu numero de desplazamiento" type="text" name="txt" id= "inum"  class= "myinput" autocomplete="off">
-    <br>
-    <br>
-    <input type="button" name="bcodificar" value="CODIFICAR" id="buttonC" >
-    <input type="button" name="bdecodificar" value="DECODIFICAR" id="buttonD">
+    <input type="button" name="bcodificar" value="ENCODE" id="buttonC" class="btt" >
+    <input type="button" name="bdecodificar" value="DECODE" id="buttonD" class="btt" >
 </div>
 
   <div class="r" id= "resultado" hidden >
@@ -56,7 +41,7 @@
     <br>
     <h3 id= "texto"> </h3>
 
-<input id="bregresar" type="button" name="" value="REGRESAR">
+<input id="bregresar" type="button" name="" value="RETURN" class="btt">
 
   </div>
   <script type="text/javascript" src="index.js"> </script>
