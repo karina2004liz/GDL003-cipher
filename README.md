@@ -1,8 +1,8 @@
-#CIFRADO CESAR
+CIFRADO CESAR
 
 El cifrado César es una de las técnicas de codificación más básicas que existen, consiste en trasladar las palabras del texto a cifrar un número determinado de posiciones en el alfabeto. Este número de posiciones será la clave que necesitaremos para descifrar más tarde nuestro mensaje. Así en un simple ejemplo si quisiéramos cifrar la letra a con una clave = 6, simplemente desplazaríamos nuestra letra 6 posiciones en el alfabeto: a, b, c, d, e, f, g. Para descifrar la g, repetiríamos el proceso pero en orden contrario: g, f, e, d, c, b, a.
 
-#
+
 CIFRADO CESAR EN LA SEGUNDA GUERRA MUNDIAL
 
 ENIGMA era el nombre de una máquina de rotores que permitía usarla tanto para cifrar como para descifrar mensajes.
@@ -13,17 +13,20 @@ Al principio de cada mes, se daba a los operadores de "Enigma" un nuevo libro qu
 
 Alan Turing participó activamente en el desarrollo de dispositivos de análisis criptográfico así como aportando muchas de las ideas que llevaron al posterior éxito en la ruptura del algoritmo de cifrado que utilizaba la máquina ENIGMA y que supuso un gran avance en la victoria de los aliados en la contienda.
 
-#* Quiénes son los principales usuarios de producto.
+* Quiénes son los principales usuarios de producto.
+
 ENIGMA está diseñado para cualquier tipo de usuario que tenga la necesidad de cifrar cualquier tipo de mensaje, o para crear contraseñas más seguras, en cualquier caso, su uso es a consideración propia.
 
-#* Cuáles son los objetivos de estos usuarios en relación con tu producto.
+* Cuáles son los objetivos de estos usuarios en relación con tu producto.
+
 El objetivo para nuestros usuarios es principalmente brindar seguridad en las necesidades básicas de cifrado.
 Ya sea un mensaje privado, o una contraseña más segura para cuentas de banco, cuentas de correo, red de wi-fi etc etc, los objetivos dependerán de las necesidades de cada individuo
 
-#* Cómo crees que el producto que estás creando está resolviendo sus problemas.
+* Cómo crees que el producto que estás creando está resolviendo sus problemas.
+
 Nuestro producto tiene como finalidad el respeto a la confidencialidad de nuestros usuarios, pero también está enfocado en crear cifrados fáciles de recordar para el usuario, pero difíciles o imposibles de decodificar para quién no conozca el número de cifrado.
 
-#Por ejemplo:
+Por ejemplo:
 
 Para crear una contraseña segura usualmente las personas usan números o cosas que dificilmente recordarán a lo largo de su vida, con código ENIGMA pueden hacerlo más sencillo, eligiendo cualquier palabra, nombre, color, etc y algún número de cifrado fácil de recordar para ellos, ya sea su fecha de nacimiento o cualquier otra número que consideren privado.
 
