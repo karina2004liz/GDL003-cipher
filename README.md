@@ -30,9 +30,9 @@ Utilicemos los siguientes datos.
 
 Para el nombre de Omar Castillo Cota podríamos utilizar nuestro cifrado para crear alguna combinación con el primer nombre y primer apellido, y para el número de cifrado podríamos utilizar la fecha de nacimiento 21-04.
 
-En el campo de texto ingresaríamos Omar-Castillo u OmarCastillo y en el campo de número de desplazamiento podríamos ingresar 20 o 04, en cualquier caso nuestra contraseña quedaría así:
+En el campo de texto ingresaríamos Omar-Castillo u OmarCastillo y en el campo de número de desplazamiento podríamos ingresar 21 o 04, en cualquier caso nuestra contraseña quedaría así:
 
-desplazamiento 20 => texto OmarCastillo =   JhvmXvnodggj
+desplazamiento 21 => texto OmarCastillo =   JhvmXvnodggj
 desplazamiento 04 => texto Omar-Castillo =  Sqev-Gewxmpps
 
 De manera que sería algo fácil de recordar para el usuario, pero casi indecifrable para el público en general.
